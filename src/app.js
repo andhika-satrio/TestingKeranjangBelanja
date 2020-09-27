@@ -1,6 +1,8 @@
 import { 
   incrementQty, 
-  decrementQty
+  decrementQty,
+  subTotal,
+  disableDecrement
 } from './helpers.js';
 
 const incrButton = document.querySelector('#incr');
