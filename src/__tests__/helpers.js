@@ -15,3 +15,7 @@ test ('Jika qty adalah 7, ketika ditambah 1 jadi = 8',() =>{
 test('Jika qtynya adalah 1, decrement button disabled = true',()=>{
     expect(helper.disableDecrement(1)).toBeTruthy();
 });
+
+test('Subtotal dari 50.000 dengan qty 3 adalah 150.000',() =>{
+    expect(helper.subTotal(50000, 3)).toBe(150000);
+})
