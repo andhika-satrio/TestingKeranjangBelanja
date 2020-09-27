@@ -11,3 +11,7 @@ test ('Jika qty adalah 2, ketika dikurangi 1 jadi = 1',() =>{
 test ('Jika qty adalah 7, ketika ditambah 1 jadi = 8',() =>{
     expect(helper.incrementQty(7)).toBe(8);
 });
+
+test('Jika qtynya adalah 1, decrement button disabled = true',()=>{
+    expect(helper.disableDecrement(1)).toBeTruthy();
+});
